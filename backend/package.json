@@ -1,11 +1,8 @@
 {
   "name": "backend",
-  "version": "1.0.0",
-  "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "build": "prisma generate",
     "postinstall": "npx prisma generate"
   },
   "dependencies": {
@@ -14,10 +11,10 @@
     "cors": "^2",
     "dotenv": "^16",
     "express": "^4",
-    "jsonwebtoken": "^9",
-    "prisma": "^5.22.0"
+    "jsonwebtoken": "^9"
   },
   "devDependencies": {
+    "prisma": "^5.22.0",
     "nodemon": "^3"
   }
 }
